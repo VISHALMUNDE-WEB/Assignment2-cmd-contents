@@ -1,0 +1,78 @@
+vishal@vishal-VirtualBox:~$ ls *
+a.txt  b.txt  c.txt  examples.desktop  f.txt  myfile
+
+Desktop:
+Assignment1.txt  f1.txt  f2.txt  f3.doc  f4.doc  f5.doc  file1  file2  myfolder
+
+Documents:
+
+Downloads:
+class recordings 
+wallpapersden.com_emraan-hashmi-black-and-white-wallpapers_1600x900.jpg
+
+Music:
+
+myfolder:
+
+Pictures:
+
+Public:
+
+Templates:
+
+Videos:
+vishal@vishal-VirtualBox:~$ cat > .hide1
+my favourite colour is purple
+vishal@vishal-VirtualBox:~$ cat > .hide2
+my favourite singer is Arijit Singh
+vishal@vishal-VirtualBox:~$ ls 
+a.txt  Desktop    examples.desktop  myfile    Public
+b.txt  Documents  f.txt             myfolder  Templates
+c.txt  Downloads  Music             Pictures  Videos
+vishal@vishal-VirtualBox:~$ ls -a
+.              Desktop           .hide1         Public
+..             .dmrc             .hide2         .sudo_as_admin_successful
+a.txt          Documents         .ICEauthority  Templates
+.bash_history  Downloads         .local         Videos
+.bash_logout   examples.desktop  .mozilla       .Xauthority
+.bashrc        .file1            Music          .xsession-errors
+b.txt          .file2            myfile         .xsession-errors.old
+.cache         f.txt             myfolder
+.config        .gconf            Pictures
+c.txt          .gnupg            .profile
+vishal@vishal-VirtualBox:~$ cat .hide1 .hide2
+my favourite colour is purple
+my favourite singer is Arijit Singh
+vishal@vishal-VirtualBox:~$ mkdir folder
+vishal@vishal-VirtualBox:~$ 
+vishal@vishal-VirtualBox:~$ 
+vishal@vishal-VirtualBox:~$ ls
+a.txt  Desktop    examples.desktop  Music     Pictures   Videos
+b.txt  Documents  folder            myfile    Public
+c.txt  Downloads  f.txt             myfolder  Templates
+vishal@vishal-VirtualBox:~$ cd folder/
+vishal@vishal-VirtualBox:~/folder$ mkdir subfolder
+vishal@vishal-VirtualBox:~/folder$ cd ~
+vishal@vishal-VirtualBox:~$ rm -r f
+folder/ f.txt   
+vishal@vishal-VirtualBox:~$ rm -r folder
+vishal@vishal-VirtualBox:~$ ls
+a.txt  Desktop    examples.desktop  myfile    Public
+b.txt  Documents  f.txt             myfolder  Templates
+c.txt  Downloads  Music             Pictures  Videos
+vishal@vishal-VirtualBox:~$ cd Desktop/
+vishal@vishal-VirtualBox:~/Desktop$ ls
+Assignment1.txt  f1.txt  f2.txt  f3.doc  f4.doc  f5.doc  file1  file2  myfolder
+vishal@vishal-VirtualBox:~/Desktop$ rm *.txt
+vishal@vishal-VirtualBox:~/Desktop$ ls
+f3.doc  f4.doc  f5.doc  file1  file2  myfolder
+vishal@vishal-VirtualBox:~/Desktop$ cat f
+f3.doc  f4.doc  f5.doc  file1   file2   
+vishal@vishal-VirtualBox:~/Desktop$ cat f
+f3.doc  f4.doc  f5.doc  file1   file2   
+vishal@vishal-VirtualBox:~/Desktop$ cat f1.txt
+cat: f1.txt: No such file or directory
+vishal@vishal-VirtualBox:~/Desktop$ cat file1
+my name is vishal 
+vishal@vishal-VirtualBox:~/Desktop$ 
+
